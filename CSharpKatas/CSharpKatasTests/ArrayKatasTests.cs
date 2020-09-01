@@ -61,6 +61,16 @@ namespace CSharpKatasTests
 
             Assert.AreEqual(3, result);
         }
+
+        [TestMethod]
+        public void getLastNameInArrayUsingLinq()
+        {
+            string[] nameArray = { "apple", "orange","banana" };
+
+            string result = ArrayKatas.getLastItemInArrayUsingLinq(nameArray);
+
+            Assert.AreEqual("banana", result);
+        }
     }
 }
 
