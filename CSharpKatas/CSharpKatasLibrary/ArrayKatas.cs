@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+
 namespace CSharpKatasLibrary
 {
     public class ArrayKatas
@@ -16,6 +18,11 @@ namespace CSharpKatasLibrary
         public dynamic getLastItemInArray<T>(T[] itemArray)
         {
             return itemArray[itemArray.Length - 1];
+        }
+
+        public static int getLastItemInArrayUsingLinq(int[] itemArray)
+        {
+            return itemArray.Last();
         }
     }
 }
