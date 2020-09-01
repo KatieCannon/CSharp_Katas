@@ -3,14 +3,19 @@ namespace CSharpKatasLibrary
 {
     public class ArrayKatas
     {
-        public static string getLastItemInArray(string[] nameArray)
+        public static int getLastItemInArrayByOverloading(int[] itemArray)
         {
-            return nameArray[nameArray.Length -1];
+            return itemArray[itemArray.Length - 1];
         }
 
-        public static int getLastItemInArray(int[] nameArray)
+        public static string getLastItemInArrayByOverloading(string[] itemArray)
         {
-            return nameArray[nameArray.Length - 1];
+            return itemArray[itemArray.Length - 1];
+        }
+
+        public dynamic getLastItemInArray<T>(T[] itemArray)
+        {
+            return itemArray[itemArray.Length - 1];
         }
     }
 }
