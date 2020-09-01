@@ -3,9 +3,14 @@ namespace CSharpKatasLibrary
 {
     public class ArrayKatas
     {
-        public static string getLastNameInArray(string[] nameArray)
+        public static string getLastItemInArray(string[] nameArray)
         {
             return nameArray[nameArray.Length -1];
+        }
+
+        public static int getLastItemInArray(int[] nameArray)
+        {
+            return nameArray[nameArray.Length - 1];
         }
     }
 }
