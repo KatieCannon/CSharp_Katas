@@ -29,5 +29,14 @@ namespace CSharpKatasLibrary
         {
             return itemArray.Last();
         }
+
+        public static int[] addAmountToAll(int[] numbersArray, int addValue)
+        {
+            for (int i = 0; i < numbersArray.Length; i++)
+            {
+                 numbersArray[i] += addValue;
+            }
+            return numbersArray;
+        }
     }
 }
