@@ -71,6 +71,19 @@ namespace CSharpKatasTests
 
             Assert.AreEqual("banana", result);
         }
+
+        [TestMethod]
+        public void addAmountToAll()
+        {
+            int[] numbersArray = { 1, 2, 3 };
+            int addValue = 2;
+
+            int[] result = ArrayKatas.addAmountToAll(numbersArray, addValue);
+
+            Assert.AreEqual(result[0], 3);
+            Assert.AreEqual(result[1], 4);
+            Assert.AreEqual(result[2], 5);
+        }
     }
 }
 
