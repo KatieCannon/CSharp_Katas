@@ -24,5 +24,10 @@ namespace CSharpKatasLibrary
         {
             return itemArray.Last();
         }
+
+        public static string getLastItemInArrayUsingLinq(string[] itemArray)
+        {
+            return itemArray.Last();
+        }
     }
 }
